@@ -1,0 +1,20 @@
+{
+  "name": "gym",
+  "version": "1.0.0",
+  "description": "It is the newly and best gym. opening on this monday onwards.",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cwh": "file:express",
+    "express": "^4.17.1",
+    "global": "^4.4.0",
+    "mongoose": "^6.0.7",
+    "pug": "^3.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

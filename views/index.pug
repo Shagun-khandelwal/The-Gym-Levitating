@@ -1,0 +1,213 @@
+html 
+    head 
+        title #{title}
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+      
+        <link href="../static/style-index.css"rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@700&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&display=swap" rel="stylesheet">
+        <link href="../static/logo.jfif" rel="icon" type="image/x-icon">
+        script.
+            window.onload = function(){
+                let btn= document.getElementById('submitbtn');
+                btn.onclick= function(){
+                confirm("click ok to confirm")
+                }
+            }    
+    body
+        <div id="body">
+            <nav>
+                <div class=" nav navbar navbar-fixed-top "> 
+                    <div class="navbar-header ">
+                        <a href="/"><img src="../static/logo.jfif" alt="LOADING ERROR" id="logo"></a> 
+                    </div>
+                    <div id="title">
+                        <h1>THE GYM LEVITATING</h1>
+                        <ul class="links navbar-nav navbar-right">
+                            <li class="active"><a href="/">HOME</a></li>
+                            <li><a href="/about">ABOUT</a></li>
+                            <li><a href="/login">LOGIN</a></li> 
+                        </ul>              
+                    </div>
+                </div>
+            </nav>
+
+            <div id="quote"><br><br>
+                <h1>THE GYM LEVITATING WELCOMES YOU!!</h1><br><br>
+                <h4>FITNESS IS NOT ABOUT BEING BETTER THAN ANYONE ELSE</h4>
+                <h4>IT'S ABOUT BEING BETTER THAN YOU USED TO BE.</h4>
+            </div>
+        </div>
+        <div id="welcome">
+            <h1>FACILITIES</h1>
+            <h4>-Take care of your body.Its the only place you have to live.</h4>
+        </div>
+        <div class="facilities">
+            <div class="flex container">
+                <div id="gym_equipment">
+                    <img src="../static/proper_gym_equipment.jpg" alt="PROPER GYM EQUIPMENT">
+                    <h5>PROPER TESTED GYM EQUIPMENT</h5>
+                </div>
+                <div id="gym_locker">
+                    <img src="../static/gym_locker.jpg" alt="GYM LOCKER">
+                    <h5>LOCKER TO KEEP YOUR STUFFS SAFE</h5>
+                </div>
+                <div id="drink_machine">
+                    <img src="../static/drink_machine.jpg" alt="DRINK MACHINE">
+                    <h5>VENDOR MACHINE TO MAINTAIN YOUR DAILY DIET</h5>
+                </div><br>
+            </div>
+            <div class="flex container">
+                <div id="speaker">
+                    <img src="../static/speaker.jpg" alt="SPEAKER">
+                    <h5>SPEAKER TO BOOST UP YOUR ENERGY</h5>
+                </div>
+                <div id="aerobics">
+                    <img src="../static/aerobics.jpg" alt="AEROBICS">
+                    <h5>AEROBICS</h5>
+                </div>
+                <div id="kick_boxing">
+                    <img src="../static/kick_boxing.jfif" alt="KICK BOXING">
+                    <h5>KICK BOXING FOR FASTER REFLEXES</h5>
+                </div>
+            </div>
+            <div class="flex container">
+                <div id="perosnal_trainer">
+                    <img src="../static/personal_trainer.jpg" alt="PERSONAL TRAINER">
+                    <h5>PERSONAL TRAINER </h5>
+                </div>
+                <div id="physiotherapy">
+                    <img src="../static/Physiotherapy.jpg" alt="PHYSIIOTHERAPY">
+                    <h5>PHYSIOTHERAPY FOR INJURIES</h5>
+                </div>
+                <div id="zumba">
+                    <img src="../static/zumba.jpg" alt="ZUMBA">
+                    <h5>ZUMBA FOR FLEXIBILITY</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="blocks">
+            <div id="block1">
+                <ul>
+                    <li>THE GYM LEVITATING is an excellent Zone for getting personal training in bhopal.</li>
+                    <li>The gym has a vast array of equipment, and the trainer pays an equal amount of attention to all people.</li>
+                    <li> THE GYM LEVITATING also has a separate Zumba and aerobics sections for females, making it comfortable to workout.</li>
+                    <li>The instructors are extremely knowledgeable, highly motivated who takes care of each and every individual in the gym.</li>
+                    <li>The gym fee is at reasonable.</li>
+                    <li>THE GYM LEVITATING aims to match the outside of your body to the inside of it, gifts you the fitness, the shape and the strength you wish to survive with your best.</li>
+                    <li>The gym has safety lockers, cafe, separate changing rooms with complete mirror work and shower facilities.</li>
+                    <li> Excellence in Marketing 2013 & Excellence in Customer Service 2014</li>
+                </ul>
+            </div>
+            <div id="block2">
+                <h3>TO GET MORE DETAILS ! FILL THE FEEDBACK FORM</h3>
+                <form action="/" method="POST" id="contact">
+                    <input type="text" name="firstname" id="firstname" placeholder=" TYPE YOUR FIRSTNAME">
+                    <input type="text" name="lastname" id="lastname" placeholder=" ENTER YOUR LASTNAME">
+                    <br>
+                    <input type="number" name="age" id="age" placeholder="ENTER YOUR AGE"><br>
+                    <span> GENDER:</span> <input type="radio" name="gender" id="gender">MALE
+                    <input type="radio" name="gender" id="gender">FEMALE
+                    <input type="radio" name="gender" id="gender">OTHER
+                    <br><span> DOB:</span>
+                    <input type="date" name="dob" id="dob"><br>
+                    <input type="email" name="email" id="email" placeholder="ENTER YOUR EMAIL">
+                    <br>
+                    <input type="text" name="address" id="address" placeholder="ENTER YOUR ADDRESS"><br>
+                    <center>
+                       <button id="submitbtn" class="btn btn-success" onclick="geek()">SUBMIT</button>
+                    </center>
+                </form>
+            </div>
+        </div>
+        <div id="hot_deals">
+            <h1>HOT DEALS</h1>
+            <div class="col-ld-4 bank_logos">
+                <div id="hdfc" class="bank_block_size">
+                    <center>
+                        <img src="../static/hdfc logo.jpg" alt="HDFC BANK" class="bank_size">
+                        <h5>15% OFF ON HALF-YEARLY MEMBERSHIP</h5>
+                    </center>
+                </div>
+                <div id="axis" class="bank_block_size">
+                    <center>
+                        <img src="../static/axis bank logo.jpg" alt="AXIS BANK LOGO" class="bank_size">
+                        <h5>20% OFF ON YEARLY MEMBERSHIP</h5>
+                    </center>
+                </div>
+                <div id="standard" class="bank_block_size">
+                    <center>
+                        <img src="../static/standard chartered logo.jpg" alt="STANDARD CHARTERED LOGO" class="bank_size">
+                        <h5>25% OFF ON YEARLY MEMBERSHIP</h5>
+                    </center>
+                </div>
+                <div id="citi" class="bank_block_size">
+                    <center>
+                        <img src="../static/citibank logo.jfif" alt="CITI BANK LOGO" class="bank_size">
+                        <h5>35% OFF ON YEARLY MEMBERSHIP</h5>
+                    </center>
+                </div>
+            </div>
+        </div>
+        <br>
+        <footer class="page-footer font-small teal pt-4 black">
+            <h1 style="text-align: center;width: 100%;display: block;">OUR ADVANTAGES</h1>
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Qualified trainers</h5>
+                        <p>We're sure that one time or another, you've been fascinated at how a trainer facilitates class and engages learners. Youâ€™ve also most likely observed some of the best qualities of a good trainer and already somewhat have an idea of what attributes make a trainer great at their work.</p>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        <h5 class="text-uppercase font-weight-bold">Individual training</h5>
+                        <p>A personal trainer is an individual certified to have a varying degree of knowledge of general fitness involved in exercise prescription and instruction. They motivate clients by setting goals and providing feedback and accountability to clients.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Multiple classis</h5>
+                        <p>We provides multiple classes to our clints Zumba, Aerobics, Kickboxing, strength, Power yoga, Free weight.</p>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        <h5 class="text-uppercase font-weight-bold">Hightech gym</h5>
+                        <p>Monitoring performance during the one-hour workout, from wearable devices to projection screens, which help in getting solidity from long slogans on cardio devices, make use of modern technology to enhance the experience of today's gym exercise.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Men and Women's changing rooms</h5>
+                        <p>we provide neat and clean men and women changing rooms.Separate changing rooms provided for men and women.</p>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        <h5 class="text-uppercase font-weight-bold">Complimentary Drinks</h5>
+                        <p>Have a complimentary drink and think about how you can never, ever beat me. Complimentary drinks are available every weekend.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid text-center text-md-left">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3">
+                        <h5 class="text-uppercase font-weight-bold">Towels and Lockers</h5>
+                        <p>We provides towels after you take steam twice a month.lockers are also provided to keep your stuffs safely. </p>
+                    </div>
+                    <div class="col-md-6 mb-md-0 mb-3">
+                        <h5 class="text-uppercase font-weight-bold">Free Wi-Fi Zone</h5>
+                        <p>we provide you free wifi zone to keep you at more comfortable zone.</p>
+                    </div>
+                </div>
+            </div><br><br>
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+                <a href="/"> THE GYM LEVITATING PVT. LTD.</a>
+            </div>
+        </footer>
+        
+                        
+                
+        

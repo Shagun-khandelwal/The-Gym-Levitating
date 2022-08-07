@@ -1,0 +1,58 @@
+#logo{
+    height: 70px;
+}
+body{
+    background-image: url("../static/b-3.jpg");
+    background-size: 1500px 450px;
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-size: large;
+    font-family:'Baloo Bhai 2', cursive;
+}
+.nav{
+    background-color: black;
+}
+.navbar-fixed-top{
+border-style: solid;
+border-color: black;
+}
+#title{
+    padding-top: 15px;
+}
+.links{
+   text-decoration: none; 
+   list-style: none;
+   text-align: center;  
+}
+a{
+    color: whitesmoke;
+    padding-right: 51px;
+    text-size-adjust: 30px;
+}
+a:hover{
+    text-decoration: none;
+    color: wheat;
+}
+h1{
+    font-family: 'Baloo Bhai 2', cursive;
+    display: inline;
+}
+#welcome{
+    text-align: center;
+     margin-top: 46rem;
+     color: #565454;
+     display: block;
+ }
+ #welcome h1{
+     color: red;
+ }
+ #content{
+     color: rgba(78, 78, 78, 0.925);
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 15px;
+     }
+footer{
+    background-color: black;
+    color: whitesmoke;
+    width: 100%;
+    }
